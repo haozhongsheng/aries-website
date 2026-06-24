@@ -9,7 +9,7 @@
     >
     <title>Aries Agent - Agent control plane</title>
     <link rel="preload" href="assets/aries-logo.jpg" as="image">
-    <link rel="stylesheet" href="styles.css?v=positioning-1">
+    <link rel="stylesheet" href="styles.css?v=layout-balance-2">
   </head>
   <body>
     <header class="site-header" aria-label="Primary navigation">
@@ -46,34 +46,38 @@
         </div>
       </section>
 
-      <section class="boundary" aria-label="Aries trust boundary">
-        <ol class="boundary-chain">
-          <li>
-            <span>Trust</span>
-            <strong>Control plane first</strong>
-            <p>Host owns identity, secrets, policy, routing, and approvals.</p>
-          </li>
-          <li>
-            <span>Runtime</span>
-            <strong>Small agent surface</strong>
-            <p>Runner gets only scoped tools, skills, MCP, and mounts.</p>
-          </li>
-          <li>
-            <span>Evidence</span>
-            <strong>Auditable by design</strong>
-            <p>Connectors, cron, and agent calls leave receipts and traces.</p>
-          </li>
-        </ol>
-      </section>
+      <section class="lower-deck" aria-label="Aries runtime overview">
+        <div class="lower-inner">
+          <section class="boundary" aria-label="Aries trust boundary">
+            <ol class="boundary-chain">
+              <li>
+                <span>Trust</span>
+                <strong>Control plane first</strong>
+                <p>Host owns identity, secrets, policy, routing, and approvals.</p>
+              </li>
+              <li>
+                <span>Runtime</span>
+                <strong>Small agent surface</strong>
+                <p>Runner gets only scoped tools, skills, MCP, and mounts.</p>
+              </li>
+              <li>
+                <span>Evidence</span>
+                <strong>Auditable by design</strong>
+                <p>Connectors, cron, and agent calls leave receipts and traces.</p>
+              </li>
+            </ol>
+          </section>
 
-      <section id="quickstart" class="quickstart" aria-labelledby="quickstart-title">
-        <div>
-          <p class="eyebrow">From source</p>
-          <h2 id="quickstart-title">Build the substrate.</h2>
-        </div>
-        <pre aria-label="Quickstart commands"><code>git clone https://github.com/haozhongsheng/aries.git
+          <section id="quickstart" class="quickstart" aria-labelledby="quickstart-title">
+            <div>
+              <p class="eyebrow">From source</p>
+              <h2 id="quickstart-title">Build the substrate.</h2>
+            </div>
+            <pre aria-label="Quickstart commands"><code>git clone https://github.com/haozhongsheng/aries.git
 cd aries
 make all && aries</code></pre>
+          </section>
+        </div>
       </section>
     </main>
 
