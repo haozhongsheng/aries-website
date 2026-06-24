@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Aries Agent is an agent control plane with Host-owned trust, scoped Runner execution, owner-aware policy, approvals, connectors, and traceable autonomy."
+    >
+    <title>Aries Agent - Agent control plane</title>
+    <link rel="preload" href="assets/aries-logo.jpg" as="image">
+    <link rel="stylesheet" href="styles.css?v=positioning-1">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Aries Agent home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Aries Agent</span>
+      </a>
+      <nav class="nav-links" aria-label="Page sections">
+        <a href="#quickstart">Quickstart</a>
+        <a href="https://github.com/haozhongsheng/aries">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-logo"
+          src="assets/aries-logo.jpg"
+          alt=""
+          aria-hidden="true"
+        >
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Agent control plane</p>
+          <h1 id="hero-title">Aries Agent</h1>
+          <p class="hero-copy">
+            OpenClaw proves the channel-first assistant. Hermes proves the
+            self-improving companion. Aries targets the layer below: owned
+            trust, scoped execution, and evidence for every autonomous run.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="#quickstart">Build the control plane</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="boundary" aria-label="Aries trust boundary">
+        <ol class="boundary-chain">
+          <li>
+            <span>Trust</span>
+            <strong>Control plane first</strong>
+            <p>Host owns identity, secrets, policy, routing, and approvals.</p>
+          </li>
+          <li>
+            <span>Runtime</span>
+            <strong>Small agent surface</strong>
+            <p>Runner gets only scoped tools, skills, MCP, and mounts.</p>
+          </li>
+          <li>
+            <span>Evidence</span>
+            <strong>Auditable by design</strong>
+            <p>Connectors, cron, and agent calls leave receipts and traces.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="quickstart" class="quickstart" aria-labelledby="quickstart-title">
+        <div>
+          <p class="eyebrow">From source</p>
+          <h2 id="quickstart-title">Build the substrate.</h2>
+        </div>
+        <pre aria-label="Quickstart commands"><code>git clone https://github.com/haozhongsheng/aries.git
+cd aries
+make all && aries</code></pre>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>MIT licensed.</p>
+      <a href="https://github.com/haozhongsheng/aries">GitHub repository</a>
+    </footer>
+  </body>
+</html>
